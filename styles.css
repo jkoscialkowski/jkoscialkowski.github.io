@@ -16,7 +16,7 @@ html {
     font-size: 10px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 650px), (max-height: 400px) {
     html {
         font-size: 6px;
     }
@@ -75,17 +75,32 @@ a {
     list-style: none;
 }
 
+@media (max-width: 650px), (max-height: 400px) {
+    #header {
+        background-color: black;
+        z-index: 1;
+    }
+}
+
 @media (max-width: 650px) {
     #header {
         justify-content: center;
-        background-color: black;
-        z-index: 1;
     }
 
     #navbar ul {
         width: 50vw;
         flex-direction: column;
         font-size: 2em;
+    }
+}
+
+@media (max-height: 400px) {
+    #header {
+        justify-content: space-around;
+    }
+
+    #navbar ul {
+        width: 100vw;
     }
 }
 
@@ -144,15 +159,20 @@ a {
 }
 
 /* ABOUT ME */
+@media (max-height: 400px) {
+    .about-me-text {
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 60vh;
+    }
+}
 #about-me p, #about-me ul {
     font-size: 1.4em;
 }
 
-
 #about-me ul {
     padding: 20px;
 }
-
 
 /* READING LIST */
 .books-list {
