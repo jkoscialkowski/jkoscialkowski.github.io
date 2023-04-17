@@ -30,6 +30,7 @@ body {
     max-width: 1200px;
     margin: auto;
     font-size: 1.4rem;
+    overscroll-behavior: none;
 }
 
 h1, h3, h5 {
@@ -51,6 +52,14 @@ a {
     color: var(--text-color);
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+p a {
+    text-decoration: underline;
+}
+
 /* HEADER */
 #header {
     position: fixed;
@@ -60,10 +69,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    background-color: var(--bg-color1);
+    z-index: 1;
 }
 
 #navbar ul {
-    width: 20vw;
+    width: 30vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -73,13 +84,6 @@ a {
 #navbar ul li {
     padding: 10px;
     list-style: none;
-}
-
-@media (max-width: 650px), (max-height: 400px) {
-    #header {
-        background-color: black;
-        z-index: 1;
-    }
 }
 
 @media (max-width: 650px) {
@@ -172,32 +176,6 @@ a {
 
 #about-me ul {
     padding: 20px;
-}
-
-/* READING LIST */
-.books-list {
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-    overflow-y: scroll;
-    height: 50vh;
-}
-
-.book-entry {
-    margin: 50px 0;
-}
-
-::-webkit-scrollbar {
-    width: 20px;
-}
-::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 20%);
-}
-::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 40%);
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 60%);
 }
 
 /* FOOTER */
