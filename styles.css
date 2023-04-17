@@ -118,6 +118,8 @@ p a {
     border-style: solid;
     padding-top: 10vh;
     text-align: justify;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 @media (max-width: 650px) {
