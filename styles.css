@@ -30,7 +30,7 @@ body {
     max-width: 1200px;
     margin: auto;
     font-size: 1.4rem;
-    overscroll-behavior: none;
+    overscroll-behavior-y: none;
 }
 
 h1, h3, h5 {
